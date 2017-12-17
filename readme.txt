@@ -25,13 +25,13 @@ counter.html修改：将“开始计时”和“停止计时”功能合并到一个按钮上。即网页上个只
                                               B同学代码库  C同学代码库  D同学代码库
 
                                       
-                                       A   
-B同学码库  -----pull request----->     同  
-                                       学  
-C同学码库  -----pull request----->     的  
-                                       代  
-D同学码库  -----pull request----->     码  
-                                       库  
+                                         A   
+B同学代码库  -----pull request----->     同  
+                                         学  
+C同学代码库  -----pull request----->     的  
+                                         代  
+D同学代码库  -----pull request----->     码  
+                                         库  
 
 （A同学无须再发送pull request到wjl8026/JS-Demos）
 
