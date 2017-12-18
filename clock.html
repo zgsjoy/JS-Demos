@@ -3,22 +3,33 @@
 <script type="text/javascript">
 function startTime()
 {
-var today=new Date()
-var h=today.getHours()
-var m=today.getMinutes()
-var s=today.getSeconds()
-// add a zero in front of numbers<10
-m=checkTime(m)
-s=checkTime(s)
-document.getElementById('txt').innerHTML=h+":"+m+":"+s
-t=setTimeout('startTime()',500)
+	var today=new Date()
+	var h=today.getHours()
+	var m=today.getMinutes()
+	var s=today.getSeconds()
+	// add a zero in front of numbers<10
+	m=checkTime(m)
+	s=checkTime(s)
+	h=checkHours(h)
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s
+	t=setTimeout('startTime()',500)
 }
 
 function checkTime(i)
 {
-if (i<10) 
-  {i="0" + i}
-  return i
+	if (i<10) 
+	  {i="0" + i}
+	  return i
+}
+function checkHours(hour){
+  var apm="AM"+hour; //默认显示上午: AM
+  if (hour>12) //按12小时制显示
+  {
+     hour=hour-12;
+     apm="PM"+hour ;
+     return apm
+  }
+  return(apm)
 }
 </script>
 </head>
