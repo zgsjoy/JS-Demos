@@ -1,4 +1,6 @@
 
+
+
 var c=0
 var t
 function timedCount()
@@ -14,3 +16,6 @@ c=0;
 setTimeout("document.getElementById('txt').value=0",0);
 clearTimeout(t);
 }
+
+//var btn=document.getElementById("btn");
+	
