@@ -1,18 +1,51 @@
 <html>
 <head>
-<script type="text/javascript" src="counter.js"></script>
 </head>
 
 <body>
 
 <form>
-<input type="button" value="��ʼ��ʱ��" onClick="timedCount()">
+<input type="button" value="开始计时" id="btn" onclick="ac()">
 <input type="text" id="txt">
-<input type="button" value="ֹͣ��ʱ��" onClick="stopCount()">
-</form>
+<!-- <input type="button" value="停止计时！" >
+ --></form>
 
-<p>��������ġ���ʼ��ʱ����ť��������ʱ����������һֱ���м�ʱ���� 0 ��ʼ�������ֹͣ��ʱ����ť������ֹ��ʱ��������������Ϊ 0��</p>
+<p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“停止计时”按钮可以终止计时，并将计数重置为 0。</p>
 
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="counter.js"></script>
+<script type="text/javascript">
+// $(function(){
+// 	$("#btn").click(function(){
+// 		//alert()
+//         if($(this).val()=="开始计时") {
+//         	alert($(this).val())
+//         	$("#btn").val("停止计时");
+//         	//timedCount();
+        	
+//         }
+//         if($(this).val()=="停止计时") {
+//         	//stopCount();
+//         	$("#btn").val("开始计时");
+//         }
+// 	})
+// })
+var btn=document.getElementById("btn");
+alert(btn)
+   function ac(){  
+		alert()
+        if(btn.value=="开始计时") {
+        	//timedCount();
+        	alert()
+        	btn.value="停止计时";
+        }
+        if(btn.value=="停止计时") {
+        	stopCount();
+        	btn.value="开始计时";
+        }
+}
+	
+</script>
 </body>
-
 </html>
